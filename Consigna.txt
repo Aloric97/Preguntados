@@ -1,0 +1,37 @@
+Mas o menos, nos pasaron algunos lineamientos pero no se tuvo la reunión así que algo podría llegar a variar.
+Pero entre más o menos la información que ya esta sería:
+
+Aplicación web desarrollada con tecnología DJANGO.
+Modalidad grupal.
+
+Lunes habrá un formulario para contestar, y con los que contesten se van a definir los grupos.
+Miercoles ya estarían definido los grupos y se les pasa quien hace con quien.
+
+Desde la semana del 9 de Agosto, los encuentros serán obligatorios, debiendo participar al menos una persona por equipo.
+
+Durante la semana del 30 de Agosto de 2021, cada trabajo debe poder ser accedido desde repositorios GIT, la URL se subirá en una actividad en el aula virtual que van habilitar esos dias.
+Al finalizar el trabajo (cuando esté publicado el link en la tarea), cada persona deberá completar una encuesta sobre detalles respecto al proceso de desarrollo de la aplicación.
+
+
+Sobre la aplicación:
+
+Aplicación web que represente un juego de preguntas y respuestas relacionado al aniversario de Provincialización del Chaco.
+
+Especificaciones:
+    Perfiles: Admin - Participante 
+        El perfil Admin podrá:
+            Cargar preguntas a un banco aleatorio
+            Conocer estadísticas de acceso y participantes
+        El perfil Participante podrá:
+            Registrarse y Loguearse
+            Jugar
+            Compartir resultados
+
+Sobre el juego:
+    Se dispondran de preguntas con opciones múltiple choice
+    La configuración (avanzar por niveles, elegir niveles, etc) queda a criterio de cada grupo
+    Deberá mostrar el resultado final 
+    Posibilitar compartir resultados
+    Restricciones de diseño y funcionamiento adicional queda a criterio de cada grupo y comisión
+
+POR SI NO LO VIERON EN DISCORD
