@@ -1,0 +1,38 @@
+{% load static %}
+
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                   
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="{% url 'home' %}">Home</a></li>
+                        <li class="scroll-to-section"><a href="#services">Preguntas</a></li>
+                        <li class="submenu">
+                            <a href="javascript:;">Estadisticas</a>
+                            <ul>
+                                <li><a href="">Acceso</a></li>
+                                <li><a href="">Usuarios</a></li>
+                            </ul>
+                        </li>
+                        <li class="scroll-to-section"><a href="{% url 'register' %}">Registrarse</a></li>
+                        {% if user.is_authenticated %}
+                            <li><a href="#">Welcome, {{ user.username }}</a></li>
+                            <li><a href="{% url 'logout' %}">logout</a></li>
+                        {% else %}
+                            <li class="scroll-to-section"><a href="{% url 'login' %}">Ingresar</a></li>
+                        {% endif %}
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
