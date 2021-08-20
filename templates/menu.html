@@ -7,19 +7,19 @@
                     <ul class="nav">
                         <li class="scroll-to-section"><a href="{% url 'home' %}">Home</a></li>
                         {% if request.user.is_staff %}
-                        <li class="scroll-to-section"><a href="#services">Preguntas</a></li>
+                        <li class="scroll-to-section"><a href="{% url 'estadisticas' %}">Gestion_Usuarios</a></li>
                         
                         <li class="submenu">
-                            <a href="javascript:;">Estadisticas</a>
+                            <a href="javascript:;">Preguntas</a>
                             <ul>
-                                <li><a href="">Acceso</a></li>
-                                <li><a href="{% url 'estadisticas' %}">Usuarios</a></li>
+                                <li><a href="{% url 'crear_preguntas' %}">Crear_Preguntas</a></li>
+                                <li><a href="{% url 'crear_respuesta' %}">Crear_Respuesta</a></li>
                             </ul>
                         </li>
                         {% endif %}
                         <li class="scroll-to-section"><a href="{% url 'register' %}">Registrarse</a></li>
                         {% if user.is_authenticated %}
-                            <li><a href="{% url 'cuenta' %}"><u>Bienvenido, {{ user.username }}</u></a></li>
+                            <li><a href="{% url 'Perfil_usuario' %}"><u>Bienvenido, {{ user.username }}</u></a></li>
                             <li><a href="{% url 'logout' %}">logout</a></li>
                         {% else %}
                             <li class="scroll-to-section"><a href="{% url 'login' %}">Ingresar</a></li>
